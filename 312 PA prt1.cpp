@@ -36,14 +36,64 @@ bool Not(bool a){
 }
 
 
-bool XOR(bool a, bool b)
-bool Mux(bool operation, bool output_if_true, bool output_if_false)
-bool Sum(bool a, bool b) 
-bool Sum(bool a bool b, bool c)
-bool CarryOut(bool a, bool b, bool c)
-bool Equal(bool a, bool b)
+bool XOR(bool a, bool b){
+
+	return OR(AND(a,NOT(b)),AND(NOT(a),b));
+	
+}
 
 
-void printFunctionCount()
-void print(bool a)
-void resetFunctionCount()
+bool Mux(bool operation, bool output_if_true, bool output_if_false){
+
+	return OR(AND(output_if_true, NOT(operation)),AND(output_if_false,operation));
+
+}
+
+
+bool Sum(bool a, bool b){
+
+	return XOR(a,b);
+
+}
+
+
+bool Sum(bool a bool b, bool c){
+
+	return SUM(SUM(a,b),c);
+
+}
+
+
+bool CarryOut(bool a, bool b, bool c){
+
+	return OR(OR(AND(a,b),AND(a,c)),AND(b,c));
+
+}
+
+
+bool Equal(bool a, bool b){
+
+	return NOT(SUM(a,b));
+
+}
+
+
+void printFunctionCount(){
+
+	cout << "FunctionCount: " << functionCount << endl;
+
+}
+
+
+void print(bool a){
+
+	cout << "Result: " << a << endl;
+
+}
+
+
+void resetFunctionCount(){
+
+	functionCount = 0;
+
+}
