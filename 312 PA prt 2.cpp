@@ -13,16 +13,32 @@ static int functionCount;
 
 //create byte functions
 
-bool getValue(bool byte[8], int offset)
+bool getValue(bool byte[8], int offset){
+
+	return byte[offset];
+
+}
 
 
-void writeValue(bool* byte, int offset, bool value)
+void writeValue(bool* byte, int offset, bool value){
+
+	byte[offset] = value;
+	
+}
 
 
-void printValue(bool byte[8])
+void printValue(bool byte[8]){
+
+	cout << byte[1] << byte[2] << byte[3] << byte[4] << byte[5] << byte[6] << byte[7] << byte[8] << endl;
+
+}
 
 
-void printValueInDecimal(bool byte[8])
+void printValueInDecimal(bool byte[8]){
+
+	
+
+}
 
  
 bool* mux(bool* output, bool operation, bool input1[8], bool input2[8])
