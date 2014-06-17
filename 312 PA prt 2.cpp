@@ -6,42 +6,44 @@
 
 using namespace std;
 
-//part 1
+//part 2
 
 static int functionCount;
 
-bool And(bool a, bool b){
-	
-	functionCount++;
-	return a && b;
-	
-}
+bool getValue(bool byte[8], int offset)
 
 
-bool Or (bool a, bool b){
-	
-	functionCount++;
-	return a||b;
-	
-}
-
-	
-bool Not(bool a){
-	
-	functionCount++;
-	return !a;
-	
-}
+void writeValue(bool* byte, int offset, bool value)
 
 
-bool XOR(bool a, bool b)
-bool Mux(bool operation, bool output_if_true, bool output_if_false)
-bool Sum(bool a, bool b) 
-bool Sum(bool a bool b, bool c)
-bool CarryOut(bool a, bool b, bool c)
-bool Equal(bool a, bool b)
+void printValue(bool byte[8])
 
 
-void printFunctionCount()
-void print(bool a)
-void resetFunctionCount()
+void printValueInDecimal(bool byte[8])
+
+ 
+bool* mux(bool* output, bool operation, bool input1[8], bool input2[8])
+bool* addu(bool* output, bool input1[8], bool input2[8]);
+bool* negate(bool* output, bool input[8]) (create the 2's complement version of 	 this number - make sure that a value negated twice is itself)
+
+bool* subu(bool* output, bool input1[8], bool input2[8]);
+
+bool equal(bool input1[8], bool input2[8]); (return 0 if two values are different) 
+
+bool lessthan(bool input1[8], bool input2[8]); (return 0 if false)
+
+bool greaterthan(bool input1[8], bool input2[8]); (return 0 if false)
+
+bool* equal(bool* output, bool input1[8], bool input2[8]); (return 00000000 if two values are different) 
+
+bool* lessthan(bool* output, bool input1[8], bool input2[8]); (return 00000000 if false)
+
+bool* greaterthan(bool* output, bool input1[8], bool input2[8]); (return 00000000 if false)
+
+bool* and(bool* output, bool input1[8], bool input2[8]); (bitwise and)
+
+bool* or(bool* output, bool input1[8], bool input2[8]); (bitwise or)
+
+bool* shiftLeft(bool* output, bool input[8]) (shift left all bits, equivalent to multiplication with 2)
+
+bool* shiftRight(bool* output, bool input[8]) (shift right all bits including the sign bit)(shift in same value as MSB)
