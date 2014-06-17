@@ -10,6 +10,8 @@ using namespace std;
 
 static int functionCount;
 
+//create an alu
+
 
 Create variables for each of the following:
 Let 16 (00010000)= ADDU

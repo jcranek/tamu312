@@ -10,6 +10,8 @@ using namespace std;
 
 static int functionCount;
 
+//basic functions 
+
 bool And(bool a, bool b){
 	
 	functionCount++;

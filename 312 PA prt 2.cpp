@@ -10,6 +10,9 @@ using namespace std;
 
 static int functionCount;
 
+
+//create byte functions
+
 bool getValue(bool byte[8], int offset)
 
 
