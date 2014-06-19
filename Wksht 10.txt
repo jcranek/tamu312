@@ -83,3 +83,7 @@ lw $s0 12($sp)
 addi $sp $sp k
 jr $r2
 
+
+//p6
+
+
