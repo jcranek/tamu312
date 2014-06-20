@@ -1,16 +1,16 @@
-// Joshua Cranek
-// 312 Prog Assig
+# Joshua Cranek
+# 312 Prog Assig
 
 #include <stdexcept>
 #include <iostream>
 
 using namespace std;
 
-//part 3
+#part 3
 
 static int functionCount;
 
-//create an alu
+#create an alu
 
 
 Create variables for each of the following:

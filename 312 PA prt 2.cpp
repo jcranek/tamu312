@@ -1,17 +1,17 @@
-// Joshua Cranek
-// 312 Prog Assig
+# Joshua Cranek
+# 312 Prog Assig
 
 #include <stdexcept>
 #include <iostream>
 
 using namespace std;
 
-//part 2
+#part 2
 
 static int functionCount;
 
 
-//create byte functions
+#create byte functions
 
 bool getValue(bool byte[8], int offset){
 
