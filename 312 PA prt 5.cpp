@@ -1,14 +1,17 @@
-# Joshua Cranek
-# 312 Prog Assig
+#include "basic_functions.h"
 
-#include <stdexcept>
-#include <iostream>
 
-using namespace std;
-
-#part 3
+#part 5
 
 static int functionCount;
 
 
 #create multu and mult, div u and div
+#Let 10 (00001010)= MULTU
+#Let 11 (00001011)= MULT
+
+#Let 12 (00001100)= DIVU
+#Let 13 (00001101)= DIV
+
+
+
