@@ -168,7 +168,7 @@ bool* greaterthan(bool* output, bool input1[8], bool input2[8]){ (return 0000000
 
 }
 
-bool* and(bool* output, bool input1[8], bool input2[8]){ #  (bitwise and)
+bool* and8(bool* output, bool input1[8], bool input2[8]){ #  (bitwise and)
 
 	output[0] = AND(input1[0], input2[0]);
 	output[1] = AND(input1[1], input2[1]);
@@ -182,7 +182,7 @@ bool* and(bool* output, bool input1[8], bool input2[8]){ #  (bitwise and)
 
 }
 
-bool* or(bool* output, bool input1[8], bool input2[8]){ #  (bitwise or)
+bool* or8(bool* output, bool input1[8], bool input2[8]){ #  (bitwise or)
 
 	output[0] = OR(input1[0], input2[0]);
 	output[1] = OR(input1[1], input2[1]);
